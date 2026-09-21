@@ -28,7 +28,7 @@ a:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
   from { background-position: 0 0, 0 0, 0 0; }
   to { background-position: var(--tile) 0, 0 0, 0 0; }
 }
-@keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes drift { from { transform: translateX(var(--lw, 100vw)); } to { transform: translateX(-100%); } }
 
 /* ------------------------------------------------------------------ HOME */
 
@@ -76,7 +76,7 @@ a:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px rgba(0,0,0,.6);
 }
 .lane { height: var(--lane); line-height: var(--lane); overflow: hidden; white-space: nowrap; }
-.dm { display: inline-block; animation: drift linear infinite; }
+.dm { display: inline-block; animation: drift linear infinite; will-change: transform; }
 .lane:hover .dm, .lane:focus-within .dm { animation-play-state: paused; }
 .item { padding-right: 2.4em; }
 .ticker a { color: #fff; text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 2px; }

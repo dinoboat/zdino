@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found | Dino Ge Zhang</title>
+<!--
+  GitHub Pages shows this file for any address that does not exist.
+  Because it can appear at any depth (e.g. /2024/04/some-old-post/), every path below
+  starts with "/" so it always finds the site's files. This needs the site to live at the
+  top of a domain (e.g. yourname.com), which is the plan.
+-->
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  /* "404" has three characters, so it can be a little larger than DINO */
+  .lost .scene { --dino: min(38vw, 60vh); }
+  .lost .bio a { text-decoration: underline; text-underline-offset: 3px; }
+  .lost .bio a:hover, .lost .bio a:focus-visible { background: var(--green); outline: 0; }
+  @media (max-width: 760px) { .lost .scene { --dino: min(46vw, 44vh); } }
+</style>
+</head>
+<body class="home-page">
+
+<main class="home lost">
+  <h1 class="sr-only">Page not found</h1>
+
+  <div class="stage" aria-hidden="true">
+    <div class="scene" id="scene"></div>
+  </div>
+
+  <nav class="bar" aria-label="Primary">
+    <div class="bio">
+      <p>This page doesn't exist. It may have moved when the site was rebuilt.</p>
+      <p>You can look through the <a href="/work/">publications</a> instead.</p>
+    </div>
+    <a class="more" href="/">home</a>
+  </nav>
+</main>
+
+<script>
+  // Same spinning, glossy-green lettering as the Home page, just reading 404.
+  (function () {
+    var scene = document.getElementById('scene');
+    var layers = 24;
+    for (var i = 0; i < layers; i++) {
+      var d = document.createElement('div');
+      d.className = 'layer ' + (i === 0 || i === layers - 1 ? 'face' : 'side');
+      d.style.setProperty('--k', String(i - (layers - 1) / 2));
+      d.textContent = '404';
+      scene.appendChild(d);
+    }
+  })();
+</script>
+</body>
+</html>

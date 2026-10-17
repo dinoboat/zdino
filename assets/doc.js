@@ -25,6 +25,8 @@
   });
   var single = main.getAttribute('data-content');
   var defaultLang = main.getAttribute('data-default-lang') || Object.keys(files)[0];
+  // text added after the page title in the browser tab; a page can turn it off with  data-title-suffix=""
+  var titleSuffix = main.hasAttribute('data-title-suffix') ? main.getAttribute('data-title-suffix') : ' | Dino Ge Zhang';
   var cache = {};
 
   function fail(err) {
@@ -34,7 +36,7 @@
 
   function show(doc, file) {
     main.innerHTML = doc.html || '<p>Nothing here yet. Add text to ' + file + '.</p>';
-    if (doc.title) document.title = doc.title + ' | Dino Ge Zhang';
+    if (doc.title) document.title = doc.title + titleSuffix;
   }
 
   function setLang(lang, updateAddress) {

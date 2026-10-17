@@ -138,6 +138,45 @@ body.work a:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; 
 .folded .label { margin-bottom: 0; }
 .folded .up { margin: -22px 0 12px; }   /* when folded, the arrow sits on the same line as the label */
 .note { margin: 0; }
+
+/* -------------------------------------------- TEXT PAGES (e.g. /cfa/) */
+/* Same narrow column as the Work page; the text comes from a file in content/. */
+
+.doc { margin-top: 12px; padding-top: 14px; border-top: 1px dotted rgba(13,13,18,.45); }
+.page > .doc:first-child,
+.page > .lang + .doc { margin-top: 0; padding-top: 0; border-top: 0; }   /* no name above it: no dividing line */
+
+/* 中文 | EN switch: top right, on the same line as the page title */
+.page { position: relative; }
+.lang { position: absolute; top: 30px; right: 18px; display: flex; gap: 4px; }
+.lang button {
+  margin: 0; padding: 3px 9px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink);
+  font-family: 'Barlow Condensed', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  font-size: 15px; font-weight: 700; line-height: 1.2; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--green); }
+.lang button:hover, .lang button:focus-visible { background: var(--green); outline: 0; }
+.lang + .doc .doc-title { padding-right: 110px; }   /* keep a long title clear of the switch */
+
+/* Chinese text: Barlow Condensed has no Chinese characters, so use good Chinese system fonts
+   (these also work in mainland China, where Google Fonts are blocked), and give it more line spacing.
+   The Chinese font comes FIRST so Chinese punctuation (——, “ ”, ……) is drawn full-width, as it should be. */
+.doc:lang(zh) {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Barlow Condensed', sans-serif;
+  line-height: 1.6;
+}
+.doc:lang(zh) .doc-title { line-height: 1.25; }
+.doc:lang(zh) .label { letter-spacing: .1em; }
+.doc-title { margin: 0 0 12px; font-size: 30px; font-weight: 800; line-height: 1.05; letter-spacing: -.01em; }
+.doc p { margin: 0 0 10px; }
+.doc .doc-sub { margin: -6px 0 16px; font-size: 21px; font-weight: 700; line-height: 1.25; }
+.doc img { display: block; max-width: 220px; height: auto; margin: 4px 0 12px; }
+.doc .label { margin: 10px 0 7px; }
+.doc ul { margin: 0 0 10px; padding-left: 1.1em; }
+.doc li { margin: 0 0 4px; }
+.doc a { text-decoration: underline; text-underline-offset: 3px; }
+.doc a:hover { background: var(--green); }
+
 /* ---------------------------------------------------------------- PHONES */
 
 @media (max-width: 760px) {
@@ -149,6 +188,8 @@ body.work a:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; 
 
   .page { padding: 20px 14px 56px; font-size: 16px; }
   .masthead .name { font-size: 23px; }
+  .doc-title { font-size: 26px; }
+  .lang { top: 22px; right: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

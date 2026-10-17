@@ -20,9 +20,12 @@
     return siteRoot + u;
   }
 
-  // [words](address) -> link, *words* -> italics. Everything else is plain text.
+  // ![description](address) -> picture, [words](address) -> link, *words* -> italics. Everything else is plain text.
   function inline(md) {
     var s = esc(md);
+    s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, function (m, alt, url) {
+      return '<img src="' + safeUrl(url) + '" alt="' + alt + '">';
+    });
     s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, text, url) {
       return '<a href="' + safeUrl(url) + '">' + text + '</a>';
     });
@@ -81,5 +84,43 @@
     });
   }
 
-  window.Work = { load: load, loadBio: loadBio, parse: parse, inline: inline, plain: plain };
+  // A text page (e.g. content/cfa.md):
+  //   # Title          -> the page title
+  //   ### subtitle     -> a subtitle line (e.g. under the title)
+  //   ## heading       -> a green label
+  //   - item           -> a list item
+  //   other lines      -> paragraphs (a blank line starts a new paragraph)
+  // plus the same [link](address), *italics* and **bold** symbols.
+  function renderDoc(md) {
+    md = md.replace(/<!--[\s\S]*?-->/g, '');
+    var out = [], para = [], list = [], title = '';
+    function flushPara() { if (para.length) { out.push('<p>' + inline(para.join(' ')) + '</p>'); para = []; } }
+    function flushList() {
+      if (list.length) {
+        out.push('<ul>' + list.map(function (t) { return '<li>' + inline(t) + '</li>'; }).join('') + '</ul>');
+        list = [];
+      }
+    }
+    md.split(/\r?\n/).forEach(function (raw) {
+      var line = raw.trim(), m;
+      if (!line) { flushPara(); flushList(); }
+      else if ((m = line.match(/^#\s+(.*)$/))) { flushPara(); flushList(); title = m[1].trim(); out.push('<h1 class="doc-title">' + inline(title) + '</h1>'); }
+      else if ((m = line.match(/^###\s+(.*)$/))) { flushPara(); flushList(); out.push('<p class="doc-sub">' + inline(m[1].trim()) + '</p>'); }
+      else if ((m = line.match(/^##\s+(.*)$/))) { flushPara(); flushList(); out.push('<h2 class="label">' + inline(m[1].trim()) + '</h2>'); }
+      else if ((m = line.match(/^[-*]\s+(.*)$/))) { flushPara(); list.push(m[1].trim()); }
+      else { flushList(); para.push(line); }
+    });
+    flushPara(); flushList();
+    return { html: out.join(''), title: plain(title) };
+  }
+
+  function loadDoc(root, path) {
+    siteRoot = root;
+    return fetch(root + path, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('Could not load ' + path + ' (' + r.status + ')');
+      return r.text();
+    }).then(renderDoc);
+  }
+
+  window.Work = { load: load, loadBio: loadBio, loadDoc: loadDoc, parse: parse, inline: inline, plain: plain };
 })();

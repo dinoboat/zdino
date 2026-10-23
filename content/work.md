@@ -20,7 +20,7 @@
   TO ADD A NEW CATEGORY: copy a  ## heading  line, rename it, put its entries underneath.
   TO REMOVE SOMETHING: delete its line.
 -->
-## edited books and special issue
+## edited books and special issues
 
 - 2026, [Games, Play and Fictional/Virtual Worlds in China](https://journals.sagepub.com/toc/gch/11/2), *Global Media and China*, 11:2.
 - 2026, [*Internet Vulgarities in China: Cultures, Governance and Politics*](https://www.routledge.com/Internet-Vulgarities-in-China-Cultures-Governance-and-Politics/Xu-Zhang/p/book/9789048563586), Routledge. [with Jian Xu]

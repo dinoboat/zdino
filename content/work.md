@@ -55,7 +55,7 @@
 
 ## selected non-fictional essays
 
-- [Deer pipes of Mountains and Seas](https://substack.com/home/post/p-207028909),*Algorithmic Folklore*.
+- [Deer pipes of Mountains and Seas](https://substack.com/home/post/p-207028909), *Algorithmic Folklore*.
 - [The depressive soundscape of northeast China](https://www.thinkchina.sg/culture/art-imitates-life-depressive-soundscape-northeast-china-eye-dongbei-series), *ThinkChina*.
 - [The ‘Affective Plague’: WeChat Groupchat as an Epidemiological Space](https://blog.westminster.ac.uk/contemporarychina/the-affective-plague-wechat-groupchat-as-an-epidemiological-space/), *Contemporary China Centre Blog*.
 - [The Spectacle of Cuckoldry and the Crisis of the Libidinal Economy](https://theasiadialogue.com/2019/11/21/the-spectacle-of-cuckoldry-and-the-crisis-of-the-libidinal-economy/), *Asia Dialogue*. ([pdf](pdfs/spectacle-of-cuckoldry-and-libidinal-economy.pdf))

@@ -22,6 +22,7 @@
 -->
 ## edited books and special issue
 
+- 2026, [Games, Play and Fictional/Virtual Worlds in China](https://journals.sagepub.com/toc/gch/11/2), *Global Media and China*, 11:2.
 - 2026, [*Internet Vulgarities in China: Cultures, Governance and Politics*](https://www.routledge.com/Internet-Vulgarities-in-China-Cultures-Governance-and-Politics/Xu-Zhang/p/book/9789048563586), Routledge. [with Jian Xu]
 - 2023, [全球电竞文化导论](http://product.dangdang.com/29560214.html), 华东师范大学出版社. [with Sun Jing]
 - 2021, [ASIA.LIVE: Inaugurating Livestream Studies in Asia](https://brill.com/view/journals/dias/8/1-2/article-p5_2.xml), *Asiascape: Digital Asia*, 8:1-2. [with Gabriele de Seta]

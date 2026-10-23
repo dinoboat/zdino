@@ -30,6 +30,8 @@
 
 ## selected academic essays
 
+- 2026, [‘Keep Politics in Games’: Reactionary Circuits between the Anglo-European Sphere and China](https://madeinchinajournal.com/2026/08/16/keep-politics-in-games-reactionary-circuits-between-the-anglo-european-sphere-and-china/), in *Made in China Journal*. [with Nathanel Amar]
+- 2026, [Game studies do not need disciplinary cohesion](https://doi.org/10.1177/20594364261419001), in *Global Media and China*, 11(2), 153-156.
 - 2025, [On Sinopessimism, or Junkies of Futility](https://madeinchinajournal.com/2025/08/05/on-sinopessimism-or-junkies-of-futility/), in *Made in China Journal*.
 - 2025, Aesthetics and Logic of Wanghong in Postdigital China, in Jian Xu, Glen Donnar and Divya Garg eds [*Asian Celebrity Cultures in the Digital Age*](https://hkupress.hku.hk/Asian_Celebrity_Cultures), Hong Kong University Press. ([pdf](pdfs/2025-aesthetics-and-logic-of-wanghong.pdf))
 - 2024, [The membranes: A decade of game studies and China in retrospect](https://journals.sagepub.com/doi/10.1177/20570473241270554), *Communication and the Public*, Online First.
@@ -53,6 +55,7 @@
 
 ## selected non-fictional essays
 
+- [Deer pipes of Mountains and Seas](https://substack.com/home/post/p-207028909),*Algorithmic Folklore*.
 - [The depressive soundscape of northeast China](https://www.thinkchina.sg/culture/art-imitates-life-depressive-soundscape-northeast-china-eye-dongbei-series), *ThinkChina*.
 - [The ‘Affective Plague’: WeChat Groupchat as an Epidemiological Space](https://blog.westminster.ac.uk/contemporarychina/the-affective-plague-wechat-groupchat-as-an-epidemiological-space/), *Contemporary China Centre Blog*.
 - [The Spectacle of Cuckoldry and the Crisis of the Libidinal Economy](https://theasiadialogue.com/2019/11/21/the-spectacle-of-cuckoldry-and-the-crisis-of-the-libidinal-economy/), *Asia Dialogue*. ([pdf](pdfs/spectacle-of-cuckoldry-and-libidinal-economy.pdf))

@@ -34,7 +34,7 @@
 - 2026, [Game studies do not need disciplinary cohesion](https://doi.org/10.1177/20594364261419001), in *Global Media and China*, 11(2), 153-156.
 - 2025, [On Sinopessimism, or Junkies of Futility](https://madeinchinajournal.com/2025/08/05/on-sinopessimism-or-junkies-of-futility/), in *Made in China Journal*.
 - 2025, Aesthetics and Logic of Wanghong in Postdigital China, in Jian Xu, Glen Donnar and Divya Garg eds [*Asian Celebrity Cultures in the Digital Age*](https://hkupress.hku.hk/Asian_Celebrity_Cultures), Hong Kong University Press. ([pdf](pdfs/2025-aesthetics-and-logic-of-wanghong.pdf))
-- 2024, [The membranes: A decade of game studies and China in retrospect](https://journals.sagepub.com/doi/10.1177/20570473241270554), *Communication and the Public*, Online First.
+- 2024, [The membranes: A decade of game studies and China in retrospect](https://journals.sagepub.com/doi/10.1177/20570473241270554), *Communication and the Public*.
 - 2023, 游戏批评的踪迹：早期中文电子游戏杂志的当代启示 (Traces of Game Criticism: Prompts from Early Chinese Videogame Magazines), [*中国游戏研究：游戏的历史*](https://book.douban.com/subject/36247489/), 华东师范大学出版社. ([pdf](pdfs/2023-traces-of-game-criticism.pdf))
 - 2022, [Short Video as Affective Contagion: (Un)locked WeChat Chatlogs on Viral Videos](https://www.tandfonline.com/doi/full/10.1080/1472586X.2022.2070537), *Visual Studies*. ([pdf](pdfs/2022-short-video-as-affective-contagion.pdf))
 - 2021, [Sino-no-futurism](https://doi.org/10.5749/vergstudglobasia.7.2.0092), *Verge: Studies in Global Asias*. 7: 2, pp.92-99. ([pdf](pdfs/2021-sino-no-futurism.pdf))

@@ -68,7 +68,6 @@
 
 ## selected talks, video essays, & interviews
 
-- 2021. [Beyond micro/internet celebrity: Renewing Wanghong as a Concept](https://circ2021.net/program/panels/wanghong-social-media-entertainment-and-the-social-industries/), Chinese Internet Research Conference, RMIT University.
 - 2021. [Apertures #1: Ari Larissa Heinrich & Dino Ge Zhang](https://www.uib.no/en/machinevision/143373/apertures-1-ari-larissa-heinrich-dino-ge-zhang), University of Bergen.
 - 2020. 漂泊不定的平等——聊聊艺术实践与劳工政治, 下榻艺术节.
 - 2020. [搞搞震 冇帮衬 | 讨论：给TA放假！](https://mp.weixin.qq.com/s/3Vdk0GN9TFNpkczWf9fE_A), 扉美术馆.
